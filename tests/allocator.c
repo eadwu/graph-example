@@ -34,5 +34,6 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    puts("passed");
     return 0;
 }
