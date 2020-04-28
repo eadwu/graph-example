@@ -47,6 +47,14 @@ Node graph_find_node(Graph g, char *name) {
     return NULL;
 }
 
+Node graph_assert_node(Graph g, char *name) {
+    Node n = graph_find_node(g, name);
+    if (n == NULL) {
+        n = graph_create_node(g, name);
+    }
+    return n;
+}
+
 Node node_create(char *name) {
     Node n;
 

@@ -25,6 +25,7 @@ struct Edge {
 Graph graph_create();
 Node graph_create_node(Graph g, char *name);
 Node graph_find_node(Graph g, char *name);
+Node graph_assert_node(Graph g, char *name);
 
 void graph_insert_node(Graph g, Node n);
 
