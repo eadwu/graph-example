@@ -37,6 +37,16 @@ Node graph_create_node(Graph g, char *name) {
     return n;
 }
 
+Node graph_find_node(Graph g, char *name) {
+    for (Node cur = g->nodes; cur != NULL; cur = cur->next) {
+        if (!strcmp(cur->name, name)) {
+            return cur;
+        }
+    }
+
+    return NULL;
+}
+
 Node node_create(char *name) {
     Node n;
 
