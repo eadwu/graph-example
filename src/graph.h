@@ -28,8 +28,10 @@ Node graph_create_node(Graph g, char *name);
 void graph_insert_node(Graph g, Node n);
 
 Node node_create(char *name);
+void node_destroy(Node n);
 void node_attach(Node n, Edge e);
 
 Edge edge_create(Node to);
+void edge_destroy(Edge e);
 
 #endif /* GRAPH_H */

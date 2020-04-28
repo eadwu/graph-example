@@ -56,6 +56,10 @@ void *allocator_alloc(Allocator a) {
 void allocator_free(Allocator a, void *ptr) {
     FreeBlock b = ptr;
 
+    if (ptr == NULL) {
+        return;
+    }
+
     b->next = a->blocks;
     a->blocks = b;
 }
