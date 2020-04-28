@@ -78,3 +78,21 @@ A C
 B A
 C B
 ```
+
+The following graph:
+
+```
+   B
+  ^
+ /
+A
+ \
+  v
+   C
+```
+
+Would be represented as:
+
+```
+A B C
+```
