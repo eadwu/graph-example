@@ -1,6 +1,8 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
+#include <stdio.h>
+
 #define NAMELEN 15
 
 typedef struct Graph *Graph;
@@ -21,6 +23,8 @@ struct Edge {
     Edge next;
     Node node;
 };
+
+Graph graph_parse(FILE *fp);
 
 Graph graph_create();
 Node graph_create_node(Graph g, char *name);
